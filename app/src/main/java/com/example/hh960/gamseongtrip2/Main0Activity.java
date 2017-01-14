@@ -7,37 +7,47 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Main0Activity extends AppCompatActivity implements View.OnClickListener {
-
+public class Main0Activity extends AppCompatActivity  {
+private Button b, button_register, button_login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main0);
-
-        Button b;
-        b = (Button)findViewById(R.id.next);
-        b.setOnClickListener(this);
-
-        Button register;
-        register=(Button)findViewById(R.id.register);
-        register.setOnClickListener(this);
-
-        Button login;
-        login= (Button)findViewById(R.id.login);
-        login.setOnClickListener(this);
+        initControl();
     }
-    @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        finish();
+    private void initControl() {
+        b = (Button) findViewById(R.id.next);
+        button_register= (Button) findViewById(R.id.register);
+        button_login = (Button) findViewById(R.id.login);
 
-        Intent intent1 = new Intent(this,LoginActivity.class);
-        startActivity(intent1);
-        finish();
-    }
+
+        b.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Main0Activity.this, MainActivity.class);
+                Main0Activity.this.startActivity(intent);
+
+            }
+        });
+
+        button_register.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Main0Activity.this, RegisterActivity.class);
+                Main0Activity.this.startActivity(intent);
+
+            }
+        });
+        button_login.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Main0Activity.this, LoginActivity.class);
+                Main0Activity.this.startActivity(intent);
+
+            }
+        });
+
 
 }
 
-
+    }
