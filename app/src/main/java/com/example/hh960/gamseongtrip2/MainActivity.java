@@ -1,5 +1,6 @@
 package com.example.hh960.gamseongtrip2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -61,9 +62,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -77,19 +76,21 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_login) {
+                    Intent intent = new Intent(MainActivity.this, Main0Activity.class);
+                    MainActivity.this.startActivity(intent);
 
-        }else if(id==R.id.nav_share){
+        } else if (id == R.id.nav_main) {
+
+        }else if(id==R.id.nav_best){
 
         }
-        else if (id == R.id.nav_slideshow) {
+        else if (id == R.id.nav_setting) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_logout) {
 
         }
 

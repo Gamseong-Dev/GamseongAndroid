@@ -3,25 +3,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Login" />
+            android:id="@+id/nav_login"
+            android:title="로그인" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="MainPage" />
+            android:id="@+id/nav_main"
+            android:icon="@drawable/home"
+            android:title="메인페이지" />
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_menu_share"
-            android:title="WeeklyBEST" />
+            android:id="@+id/nav_best"
+            android:icon="@android:drawable/btn_star_big_off"
+            android:title="Weekly감성BEST" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Settings" />
-        <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_setting"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Logout" />
+            android:title="설정" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="로그아웃" />
     </group>
 <!--
     <item android:title="Communicate">
