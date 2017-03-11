@@ -16,14 +16,14 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void initControl() {
-       Button quit= (Button) findViewById(R.id.button_quit);
+        Button quit= (Button) findViewById(R.id.button_quit);
 
 
 
         quit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
-                Intent intent = new Intent(RegisterActivity.this, Main0Activity.class);
+                Intent intent = new Intent(RegisterActivity.this, InitialActivity.class);
                 RegisterActivity.this.startActivity(intent);
 
             }

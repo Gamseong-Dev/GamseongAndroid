@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-     tools:context="com.example.hh960.gamseongtrip2.Main0Activity"
+     tools:context="com.example.hh960.gamseongtrip2.InitialActivity"
     android:background="@mipmap/loginhome">
 
     <TextView
@@ -32,17 +32,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="181dp"
         android:id="@+id/textView2" />
-
-    <Button
-        android:text="next"
-        android:textColor="#ffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:id="@+id/next"
-        android:backgroundTint="#00ff0000"
-        android:layout_above="@+id/register"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="회원가입"
@@ -69,27 +58,57 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="105dp" />
 
-    <Button
-        android:text="로그인"
-        android:textColor="#ffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:id="@+id/login"
-        android:backgroundTint="#00ff0000"
-        android:layout_above="@+id/textView4"
-        android:layout_toRightOf="@+id/next"
-        android:layout_toEndOf="@+id/next" />
-
     <TextView
         android:text="어플 감성을 소중하게 생각하는 사람들이 만들었습니다."
         android:textColor="#ffffff"
         android:textSize="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
         android:id="@+id/textView4"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+ <!--   <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:text="커스텀 페이스북 로그인 버튼"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />-->
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:id="@+id/login"
+        android:backgroundTint="#00ff0000"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/next"
+        android:layout_toEndOf="@+id/next" />
+
+    <Button
+        android:text="next"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/next"
+        android:backgroundTint="#00ff0000"
+        android:layout_above="@+id/register"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
